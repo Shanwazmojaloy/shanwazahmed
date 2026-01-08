@@ -22,6 +22,9 @@ steps:
       - 'managed'
       - '--allow-unauthenticated'
 
+# Specify logs bucket for custom service account
+logsBucket: 'gs://quick-signal-481802-d8_cloudbuild'
+
 # This section is critical for custom service accounts to avoid logging errors
 options:
   logging: CLOUD_LOGGING_ONLY
