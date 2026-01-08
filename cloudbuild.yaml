@@ -25,6 +25,7 @@ steps:
 # This section is critical for custom service accounts to avoid logging errors
 options:
   logging: CLOUD_LOGGING_ONLY
+  logsBucket: 'gs://${PROJECT_ID}_cloudbuild'
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 
 # Specifies which images are produced by this build
